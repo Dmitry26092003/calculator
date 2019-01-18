@@ -1,8 +1,44 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
 from calc36 import Ui_MainWindow
-from math import sin, cos, tan, asin, acos, atan, log2, factorial, pi
- 
+from math import sin, cos, tan, asin, acos, atan, log2, log10, log, factorial, pi
+
+
+def SOCC(base_in, base_out, n): #system of calculation convector
+    base = [i for i in '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+    if base_out == 10:
+        a = 0
+        n = str(n).split('.')
+        for i in range(1,len(n[0])+1):
+            if n[0][-i] not in base[0:base_in]:
+                return 'error'
+            a+=int(base.index(n[0][-i]))*base_in**(i - 1)
+        if len(n) != 1:
+            for i in range(1,len(n[1])+1):
+                if n[1][-i] not in base[0:base_in]:
+                    return 'error'
+                a+=int(base.index(n[1][-i]))*base_in**(-i)
+        return a
+    elif base_in == 10:
+        n = str(n).split('.')
+        n[0] = int(n[0])
+        n[1] = float('0.'+n[1])
+        b=[]
+        while n[0] != 0:
+            b += [base[n[0] % base_out]]
+            n[0] //= base_out
+        b = b[::-1]
+        if len(n) != 1:        
+            b += ['.']
+            while n[1] != 0:
+                n[1] = n[1] * base_out
+                b += [base[int(n[1])]]
+                n[1] -= int(n[1])
+        b = ''.join(b)
+        return b
+    else:
+        return SFCC(10, base_out, SFCC(base_in, 10, n))
+
 class MyWidget(QMainWindow,Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -113,31 +149,43 @@ class MyWidget(QMainWindow,Ui_MainWindow):
             self.ev += ['atan(']      
         elif self.sender().text() == 'log2':
             self.ev += ['log2(']
+        elif self.sender().text() == 'log10':
+            self.ev += ['log10(']
+        elif self.sender().text() == 'logX':
+            self.ev += ['log(']            
         elif self.sender().text() == '!':
             self.ev += ['factorial(']
         elif self.sender().text() == 'pi':
             self.ev += [str(pi)]
         else:
-            self.ev += [self.sender().text()]
-            
+            self.ev += [self.sender().text()]      
         self.label.setText(''.join(self.ev))
-        
-        
-        
-            
-            
+
     def rez(self):
+        sistem = int(open('sistem.txt', 'r').read())
+        if sistem != 10:
+            fl = True
+            for i in range(len(self.ev)):
+                if self.ev[i] not in ['(', ')', '+', '-', '/', '*', '%', '//', '**0.5', '**(1/3)', '**(1/', '**2', '**3', '**', 'sin(', 'cos(', 'tan(', 'asin(', 'acos(', 'atan(', 'log2(', 'log10(', 'log(', 'factorial(', str(pi)] and fl:
+                    fl = not fl
+                    self.ev[i] = "SOCC(sistem, 10, '"+self.ev[i]
+                if self.ev[i] in ['(', ')', '+', '-', '/', '*', '%', '//', '**0.5', '**(1/3)', '**(1/', '**2', '**3', '**', 'sin(', 'cos(', 'tan(', 'asin(', 'acos(', 'atan(', 'log2(', 'log10(', 'log(', 'factorial(', str(pi)] and not fl:
+                    fl = not fl
+                    self.ev[i-1] = self.ev[i-1]+"')"
+                if self.ev[i] not in ['(', ')', '+', '-', '/', '*', '%', '//', '**0.5', '**(1/3)', '**(1/', '**2', '**3', '**', 'sin(', 'cos(', 'tan(', 'asin(', 'acos(', 'atan(', 'log2(', 'log10(', 'log(', 'factorial(', str(pi)] and i == len(self.ev)-1:
+                    self.ev[i] = self.ev[i]+"')"
         try:
             prim = ''.join(self.ev)
+            print(prim)
             r = str(eval(prim))
+            '''if sistem != 10:
+                r = str(SOCC(10, sistem, int(r)))''' #не работает
             self.label.setText(r)
             self.ev = list(r)
-        except Exception:
+        except Exception as a:
+            print(a)
             self.label.setText('Error')
             self.ev = []
-            
-        
- 
 app = QApplication(sys.argv)
 ex = MyWidget()
 ex.show()

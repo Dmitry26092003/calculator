@@ -7,18 +7,18 @@
     <x>0</x>
     <y>0</y>
     <width>830</width>
-    <height>340</height>
+    <height>100</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>809</width>
+     <x>11</x>
+     <y>11</y>
+     <width>801</width>
      <height>57</height>
     </rect>
    </property>
@@ -26,230 +26,390 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QComboBox" name="comboBox_2">
+       <widget class="QComboBox" name="input_step">
         <item>
          <property name="text">
-          <string>Килограмм</string>
+          <string>Метр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Грамм</string>
+          <string>Километр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Тонна</string>
+          <string>Дециметр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Центнер</string>
+          <string>Сантиметр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Карат</string>
+          <string>Миллиметр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Атомная еденица массы</string>
+          <string>Микрометр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Солнечная масса</string>
+          <string>Нанометр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Электронвольт</string>
+          <string>Пикометр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Масса протона</string>
+          <string>Фемтометр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Планковская еденица массы</string>
+          <string>Лига (Лье)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Стоун</string>
+          <string>Миля</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Фунт (Американский)</string>
+          <string>Фурлонг</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Унция</string>
+          <string>Чейн</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Драхма (единица измерения массы, США)</string>
+          <string>Род</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Гран (Американский)</string>
+          <string>Ярд</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Короткая тонна</string>
+          <string>Инспекционный фут</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Короткий хандредвейт</string>
+          <string>Фут</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Тройский фунт</string>
+          <string>Линк</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Тройская унция</string>
+          <string>Хэнд</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Драхма (единица измерения массы, Великобритания)</string>
+          <string>Дюйм</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Скрупул</string>
+          <string>Линия большая</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Гран (Британский)</string>
+          <string>Линия Малая</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Берковец</string>
+          <string>Мил</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Пуд</string>
+          <string>Мо</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Фунт (Русский)</string>
+          <string>Рин</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Лот</string>
+          <string>Бу</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Золотник</string>
+          <string>Сун</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Доля</string>
+          <string>Сяку</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Аса</string>
+          <string>Кэн</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Английская тонна</string>
+          <string>Хиро</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Марка</string>
+          <string>Дзё</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Тод</string>
+          <string>Тё</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Феркин</string>
+          <string>Ри</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Хандредвейт</string>
+          <string>Палайста</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Хогсхед</string>
+          <string>Плетр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Дарейк</string>
+          <string>Миля</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Драхма (Античная)</string>
+          <string>Стадий</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Мина</string>
+          <string>Плетр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Обол</string>
+          <string>Амма</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Талант</string>
+          <string>Акена (декапод)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Халк</string>
+          <string>Оргия (гексапод)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Шекель</string>
+          <string>Бема (шаг)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Кэтти</string>
+          <string>Пехис (локоть) греческий</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Манэ</string>
+          <string>Пехис (локоть) короткий</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Арбуза</string>
+          <string>Пус (фут)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Спитам</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Дихас</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Палестра (ладонь) </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кондиль </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Дактиль (палец)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Стадий олимпийский</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Стадий аттический</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Стадий птолемеевский</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Морская миля</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кабельтов</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Морская сажень</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Радиус Луны</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Радиус Земли</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Радиус Юпитера</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Радиус Солнца</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световой месяц</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световая минута</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Астрономическая единица</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световой час</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световые сутки</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световая неделя</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световой год</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Парсек</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Сириометр</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Планковская длина</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ферми</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Класический радиус электрона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>X-еденица</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Комптоновская длина волны электрона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Боровский радиус</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ангстрем</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Юнит</string>
          </property>
         </item>
        </widget>
@@ -257,14 +417,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QLineEdit" name="lineEdit"/>
+         <widget class="QLineEdit" name="input"/>
         </item>
        </layout>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="res_2">
       <property name="text">
        <string>=</string>
       </property>
@@ -273,230 +433,390 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QComboBox" name="comboBox_3">
+       <widget class="QComboBox" name="output_step">
         <item>
          <property name="text">
-          <string>Килограмм</string>
+          <string>Метр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Грамм</string>
+          <string>Километр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Тонна</string>
+          <string>Дециметр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Центнер</string>
+          <string>Сантиметр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Карат</string>
+          <string>Миллиметр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Атомная еденица массы</string>
+          <string>Микрометр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Солнечная масса</string>
+          <string>Нанометр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Электронвольт</string>
+          <string>Пикометр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Масса протона</string>
+          <string>Фемтометр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Планковская еденица массы</string>
+          <string>Лига (Лье)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Стоун</string>
+          <string>Миля</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Фунт (Американский)</string>
+          <string>Фурлонг</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Унция</string>
+          <string>Чейн</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Драхма (единица измерения массы, США)</string>
+          <string>Род</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Гран (Американский)</string>
+          <string>Ярд</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Короткая тонна</string>
+          <string>Инспекционный фут</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Короткий хандредвейт</string>
+          <string>Фут</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Тройский фунт</string>
+          <string>Линк</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Тройская унция</string>
+          <string>Хэнд</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Драхма (единица измерения массы, Великобритания)</string>
+          <string>Дюйм</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Скрупул</string>
+          <string>Линия большая</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Гран (Британский)</string>
+          <string>Линия Малая</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Берковец</string>
+          <string>Мил</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Пуд</string>
+          <string>Мо</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Фунт (Русский)</string>
+          <string>Рин</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Лот</string>
+          <string>Бу</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Золотник</string>
+          <string>Сун</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Доля</string>
+          <string>Сяку</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Аса</string>
+          <string>Кэн</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Английская тонна</string>
+          <string>Хиро</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Марка</string>
+          <string>Дзё</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Тод</string>
+          <string>Тё</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Феркин</string>
+          <string>Ри</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Хандредвейт</string>
+          <string>Палайста</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Хогсхед</string>
+          <string>Плетр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Дарейк</string>
+          <string>Миля</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Драхма (Античная)</string>
+          <string>Стадий</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Мина</string>
+          <string>Плетр</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Обол</string>
+          <string>Амма</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Талант</string>
+          <string>Акена (декапод)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Халк</string>
+          <string>Оргия (гексапод)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Шекель</string>
+          <string>Бема (шаг)</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Кэтти</string>
+          <string>Пехис (локоть) греческий</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Манэ</string>
+          <string>Пехис (локоть) короткий</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Арбуза</string>
+          <string>Пус (фут)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Спитам</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Дихас</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Палестра (ладонь) </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кондиль </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Дактиль (палец)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Стадий олимпийский</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Стадий аттический</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Стадий птолемеевский</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Морская миля</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Кабельтов</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Морская сажень</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Радиус Луны</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Радиус Земли</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Радиус Юпитера</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Радиус Солнца</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световой месяц</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световая минута</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Астрономическая единица</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световой час</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световые сутки</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световая неделя</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Световой год</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Парсек</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Сириометр</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Планковская длина</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ферми</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Класический радиус электрона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>X-еденица</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Комптоновская длина волны электрона</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Боровский радиус</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ангстрем</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Юнит</string>
          </property>
         </item>
        </widget>
@@ -504,266 +824,15 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QLineEdit" name="lineEdit_2"/>
+         <widget class="QLabel" name="output">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
      </layout>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>100</y>
-     <width>489</width>
-     <height>231</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_3">
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_4">
-      <item>
-       <widget class="QComboBox" name="comboBox_4">
-        <item>
-         <property name="text">
-          <string>Килограмм</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Грамм</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Тонна</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Центнер</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Карат</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Атомная еденица массы</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Солнечная масса</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Электронвольт</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Масса протона</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Планковская еденица массы</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Стоун</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Фунт (Американский)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Унция</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Драхма (единица измерения массы, США)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Гран (Американский)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Короткая тонна</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Короткий хандредвейт</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Тройский фунт</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Тройская унция</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Драхма (единица измерения массы, Великобритания)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Скрупул</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Гран (Британский)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Берковец</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Пуд</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Фунт (Русский)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Лот</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Золотник</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Доля</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Аса</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Английская тонна</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Марка</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Тод</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Феркин</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Хандредвейт</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Хогсхед</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Дарейк</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Драхма (Античная)</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Мина</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Обол</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Талант</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Халк</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Шекель</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Кэтти</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Манэ</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Арбуза</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string>Узнать определение</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <widget class="QPlainTextEdit" name="plainTextEdit"/>
     </item>
    </layout>
   </widget>

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Конвертор времени</string>
   </property>
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
@@ -118,7 +118,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
-       <widget class="QComboBox" name="output_step_2">
+       <widget class="QComboBox" name="output_step">
         <item>
          <property name="text">
           <string>Секунда</string>
@@ -192,7 +192,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="output">
         <property name="text">
          <string/>
         </property>

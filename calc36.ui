@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>550</height>
+    <height>525</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -239,14 +239,14 @@
     <property name="font">
      <font>
       <family>Times New Roman</family>
-      <pointsize>20</pointsize>
+      <pointsize>15</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="text">
-     <string>_____________________</string>
+     <string>___________________________</string>
     </property>
    </widget>
    <widget class="QPushButton" name="ButtonDel">
@@ -1422,7 +1422,6 @@
     <property name="title">
      <string>Выбрать систему счисления</string>
     </property>
-    <addaction name="separator"/>
     <addaction name="action2_2"/>
     <addaction name="action8"/>
     <addaction name="action10"/>
@@ -1433,23 +1432,14 @@
     <property name="title">
      <string>Конвентор</string>
     </property>
-    <addaction name="action_5"/>
     <addaction name="action_6"/>
-    <addaction name="action_7"/>
-    <addaction name="action_8"/>
     <addaction name="action_9"/>
     <addaction name="action_10"/>
-   </widget>
-   <widget class="QMenu" name="menu_5">
-    <property name="title">
-     <string>Фон</string>
-    </property>
+    <addaction name="action"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_4"/>
-   <addaction name="menu_5"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="action2">
    <property name="text">
     <string>2</string>
@@ -1688,6 +1678,11 @@
   <action name="action_10">
    <property name="text">
     <string>Скорость</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Систем исчисления</string>
    </property>
   </action>
  </widget>

@@ -1,43 +1,54 @@
 import sys
+from os import system
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
 from calc36 import Ui_MainWindow
 from math import sin, cos, tan, asin, acos, atan, log2, log10, log, factorial, pi
 
 
 def SOCC(base_in, base_out, n): #system of calculation convector
-    base = [i for i in '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ']
-    if base_out == 10:
-        a = 0
-        n = str(n).split('.')
-        for i in range(1,len(n[0])+1):
-            if n[0][-i] not in base[0:base_in]:
-                return 'error'
-            a+=int(base.index(n[0][-i]))*base_in**(i - 1)
-        if len(n) != 1:
-            for i in range(1,len(n[1])+1):
-                if n[1][-i] not in base[0:base_in]:
+    c=''
+    if '-' in str(n):
+        c='-'
+        n = ''.join(list(str(n))[1:])    
+    try:    
+        base = [i for i in '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+        if base_out == 10:
+            a = 0
+            n = str(n).split('.')
+            for i in range(1,len(n[0])+1):
+                if n[0][-i] not in base[0:base_in]:
                     return 'error'
-                a+=int(base.index(n[1][-i]))*base_in**(-i)
-        return a
-    elif base_in == 10:
-        n = str(n).split('.')
-        n[0] = int(n[0])
-        n[1] = float('0.'+n[1])
-        b=[]
-        while n[0] != 0:
-            b += [base[n[0] % base_out]]
-            n[0] //= base_out
-        b = b[::-1]
-        if len(n) != 1:        
-            b += ['.']
-            while n[1] != 0:
-                n[1] = n[1] * base_out
-                b += [base[int(n[1])]]
-                n[1] -= int(n[1])
-        b = ''.join(b)
-        return b
-    else:
-        return SFCC(10, base_out, SFCC(base_in, 10, n))
+                a+=int(base.index(n[0][-i]))*base_in**(i - 1)
+            if len(n) != 1:
+                for i in range(1,len(n[1])+1):
+                    if n[1][-i] not in base[0:base_in]:
+                        return 'error'
+                    a+=int(base.index(n[1][-i]))*base_in**(-i)
+            return float(c+str(a))
+        elif base_in == 10:
+            n = str(n).split('.')
+            if len(n) == 1:
+                n.append('0')
+            n[0] = int(n[0])
+            n[1] = float('0.'+n[1])
+            b=[]
+            while n[0] != 0:
+                b += [base[n[0] % base_out]]
+                n[0] //= base_out
+            b = b[::-1]
+            if n[1] != 0:        
+                b += ['.']
+                while n[1] != 0:
+                    n[1] = n[1] * base_out
+                    b += [base[int(n[1])]]
+                    n[1] -= int(n[1])
+            b = ''.join(b)
+            return c+str(b)
+        else:
+            return SOCC(10, base_out, SOCC(base_in, 10, n))
+    except Exception as a:
+        print(a)
+
 
 class MyWidget(QMainWindow,Ui_MainWindow):
     def __init__(self):
@@ -110,8 +121,41 @@ class MyWidget(QMainWindow,Ui_MainWindow):
         self.ButtonASin.clicked.connect(self.run)        
         self.ButtonACos.clicked.connect(self.run)        
         self.ButtonATg.clicked.connect(self.run)        
+        #Menu
+        self.action2_2.triggered.connect(self.s2)
+        self.action8.triggered.connect(self.s8)
+        self.action10.triggered.connect(self.s10)
+        self.action16.triggered.connect(self.s16)
+        self.action_4.triggered.connect(self.s)
+        #self.action_5.triggered.connect(self.mass_convector)
+        self.action_6.triggered.connect(self.length_convector)
+        self.action_9.triggered.connect(self.time_convector)
+        self.action_10.triggered.connect(self.speed_convector)
+        self.action.triggered.connect(self.system_of_calculation_convector)
         
+    def s2(self):
+        open('system.txt', 'w').write(str(2))
+    def s8(self):
+        open('system.txt', 'w').write(str(8))
+    def s10(self):
+        open('system.txt', 'w').write(str(10))
+    def s16(self):
+        open('system.txt', 'w').write(str(16))
+    def s(self):
+        system('python SV.py')
+    def mass_convector(self):
+        pass
+    def length_convector(self):
+        system('python konvertor_len.py')
+    def time_convector(self):
+        system('python konveror_time.py')
+    def speed_convector(self):
+        system('python konveror_speed.py')
+    def system_of_calculation_convector(self):
+        system('python soc_start.py')
         
+    
+            
     def run(self):
         if self.sender().text() == '<--':
             self.ev = self.ev[:-1]
@@ -162,7 +206,7 @@ class MyWidget(QMainWindow,Ui_MainWindow):
         self.label.setText(''.join(self.ev))
 
     def rez(self):
-        sistem = int(open('sistem.txt', 'r').read())
+        sistem = int(open('system.txt', 'r').read())
         if sistem != 10:
             fl = True
             for i in range(len(self.ev)):
@@ -177,9 +221,9 @@ class MyWidget(QMainWindow,Ui_MainWindow):
         try:
             prim = ''.join(self.ev)
             print(prim)
-            r = str(eval(prim))
-            '''if sistem != 10:
-                r = str(SOCC(10, sistem, int(r)))''' #не работает
+            r = str(float(eval(prim)))
+            if sistem != 10:
+                r = ''.join(list(str(SOCC(10, sistem, r)))[0:27])
             self.label.setText(r)
             self.ev = list(r)
         except Exception as a:

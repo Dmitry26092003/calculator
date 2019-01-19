@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Конвертор масс</string>
   </property>
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
@@ -59,7 +59,7 @@
         </item>
         <item>
          <property name="text">
-          <string>Фунт (Американский)</string>
+          <string>Фунт английский</string>
          </property>
         </item>
         <item>
@@ -69,12 +69,7 @@
         </item>
         <item>
          <property name="text">
-          <string>Драхма американская</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Гран Американский</string>
+          <string>Гран американский</string>
          </property>
         </item>
         <item>
@@ -90,11 +85,6 @@
         <item>
          <property name="text">
           <string>Тройская унция</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Драхма британская</string>
          </property>
         </item>
         <item>
@@ -132,11 +122,6 @@
           <string>Марка</string>
          </property>
         </item>
-        <item>
-         <property name="text">
-          <string>Драхма античная</string>
-         </property>
-        </item>
        </widget>
       </item>
       <item>
@@ -158,7 +143,7 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <widget class="QComboBox" name="output_step_2">
+       <widget class="QComboBox" name="output_step">
         <item>
          <property name="text">
           <string>Килограмм</string>
@@ -191,7 +176,7 @@
         </item>
         <item>
          <property name="text">
-          <string>Фунт (Американский)</string>
+          <string>Фунт английский</string>
          </property>
         </item>
         <item>
@@ -201,12 +186,7 @@
         </item>
         <item>
          <property name="text">
-          <string>Драхма американская</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Гран Американский</string>
+          <string>Гран американский</string>
          </property>
         </item>
         <item>
@@ -222,11 +202,6 @@
         <item>
          <property name="text">
           <string>Тройская унция</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Драхма британская</string>
          </property>
         </item>
         <item>
@@ -262,11 +237,6 @@
         <item>
          <property name="text">
           <string>Марка</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Драхма античная</string>
          </property>
         </item>
        </widget>

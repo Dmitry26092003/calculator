@@ -3,13 +3,13 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
 from SOCC import Ui_MainWindow
 
 
-def SOCC(base_in, base_out, n): #system of calculation convector
+def SOCC(base_in, base_out, n):
     c=''
     if '-' in str(n):
         c='-'
         n = ''.join(list(str(n))[1:])    
     try:    
-        base = [i for i in '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+        base = [i for i in '0123456789ABCDEFGHIJKLMюNOPQRSTUVWXYZ']
         if base_out == 10:
             a = 0
             n = str(n).split('.')
@@ -47,7 +47,7 @@ def SOCC(base_in, base_out, n): #system of calculation convector
     except Exception as a:
         print(a)
 
-class MyWidget(QMainWindow, Ui_MainWindow):
+class SoccStart(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -59,6 +59,6 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         except Exception as a:
             print(a)
 app = QApplication(sys.argv)
-ex = MyWidget()
+ex = SoccStart()
 ex.show()
 sys.exit(app.exec()) 

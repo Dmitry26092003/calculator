@@ -38,10 +38,14 @@ def SOCC(base_in, base_out, n): #system of calculation convector
             b = b[::-1]
             if n[1] != 0:        
                 b += ['.']
+                i = 0
                 while n[1] != 0:
+                    i += 1
                     n[1] = n[1] * base_out
                     b += [base[int(n[1])]]
                     n[1] -= int(n[1])
+                    if i > 100:
+                        break
             b = ''.join(b)
             return c+str(b)
         else:
@@ -50,7 +54,7 @@ def SOCC(base_in, base_out, n): #system of calculation convector
         print(a)
 
 
-class MyWidget(QMainWindow,Ui_MainWindow):
+class Calculator(QMainWindow,Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -127,7 +131,7 @@ class MyWidget(QMainWindow,Ui_MainWindow):
         self.action10.triggered.connect(self.s10)
         self.action16.triggered.connect(self.s16)
         self.action_4.triggered.connect(self.s)
-        #self.action_5.triggered.connect(self.mass_convector)
+        self.action_2.triggered.connect(self.mass_convector)
         self.action_6.triggered.connect(self.length_convector)
         self.action_9.triggered.connect(self.time_convector)
         self.action_10.triggered.connect(self.speed_convector)
@@ -144,7 +148,7 @@ class MyWidget(QMainWindow,Ui_MainWindow):
     def s(self):
         system('python SV.py')
     def mass_convector(self):
-        pass
+        system('python konvertor.py')
     def length_convector(self):
         system('python konvertor_len.py')
     def time_convector(self):
@@ -221,16 +225,18 @@ class MyWidget(QMainWindow,Ui_MainWindow):
         try:
             prim = ''.join(self.ev)
             print(prim)
-            r = str(float(eval(prim)))
+            r = str(eval(prim))
+            print(r)
             if sistem != 10:
-                r = ''.join(list(str(SOCC(10, sistem, r)))[0:27])
-            self.label.setText(r)
+                r = ''.join(list(str(SOCC(10, sistem, float(r))))[0:27])
+            self.label.setText(str(r))
             self.ev = list(r)
         except Exception as a:
             print(a)
             self.label.setText('Error')
             self.ev = []
+open('system.txt', 'w').write(str(10))
 app = QApplication(sys.argv)
-ex = MyWidget()
+ex = Calculator()
 ex.show()
 sys.exit(app.exec())

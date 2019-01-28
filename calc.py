@@ -229,7 +229,7 @@ class Calculator(QMainWindow,Ui_MainWindow):
             print(r)
             if sistem != 10:
                 r = ''.join(list(str(SOCC(10, sistem, float(r))))[0:27])
-            self.label.setText(str(r))
+            self.label.setText(r)
             self.ev = list(r)
         except Exception as a:
             print(a)

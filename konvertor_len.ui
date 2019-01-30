@@ -89,16 +89,6 @@
         </item>
         <item>
          <property name="text">
-          <string>Инспекционный фут</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Фут</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
           <string>Дюйм</string>
          </property>
         </item>
@@ -247,16 +237,6 @@
         <item>
          <property name="text">
           <string>Ярд</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Инспекционный фут</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Фут</string>
          </property>
         </item>
         <item>

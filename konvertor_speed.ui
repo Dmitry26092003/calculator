@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>830</width>
-    <height>100</height>
+    <width>835</width>
+    <height>92</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <rect>
      <x>0</x>
      <y>10</y>
-     <width>801</width>
+     <width>811</width>
      <height>59</height>
     </rect>
    </property>
@@ -87,16 +87,6 @@
           <item>
            <property name="text">
             <string>Ярд</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Инсп. фут</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Фут</string>
            </property>
           </item>
           <item>
@@ -340,16 +330,6 @@
           <item>
            <property name="text">
             <string>Ярд</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Инсп фут</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Фут</string>
            </property>
           </item>
           <item>

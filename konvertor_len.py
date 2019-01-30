@@ -57,8 +57,12 @@ class ConvertorLen(QWidget):
                 l *= 3.09e+16
             elif self.input_step.currentText() == "Ярд":
                 l *= 0.91
+            elif self.input_step.currentText() == "Дюйм":
+                l *= 2.54 / 100
             if self.output_step.currentText() == "Километр":
                 l /= 1000
+            elif self.output_step.currentText() == "Дюйм":
+                l /= 2.54 / 100
             elif self.output_step.currentText() == "Ярд":
                 l /= 0.91
             elif self.output_step.currentText() == "Дециметр":

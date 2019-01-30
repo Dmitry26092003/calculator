@@ -63,7 +63,7 @@ class ConvertorSpeed(QWidget):
             elif self.input_step.currentText() == "r Земли":
                 v *= 6371000
             elif self.input_step.currentText() == "r Солнца":
-                v *= 6.960 * 10 ** 8
+                v *= 6.96 * 10 ** 8
             elif self.input_step.currentText() == "Свет. год":
                 v *= 9460730472583800
             elif self.input_step.currentText() == "Свет. сутки":
@@ -84,8 +84,12 @@ class ConvertorSpeed(QWidget):
                 v *= 3.09e+16
             elif self.input_step.currentText() == "Ярд":
                 v *= 0.91
+            elif self.input_step.currentText() == "Дюйм":
+                v *= 2.54 / 100
             if self.output_step.currentText() == "Километр":
                 v /= 1000
+            elif self.output_step.currentText() == "Дюйм":
+                v /= 2.54 / 100
             elif self.output_step.currentText() == "Ярд":
                 v /= 0.91
             elif self.output_step.currentText() == "Дециметр":
